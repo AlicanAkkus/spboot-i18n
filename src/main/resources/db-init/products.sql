@@ -1,0 +1,1 @@
+insert into product(id, name, details, price, count) values(1, 'Axon7', 'Axon 7 4GB/64GB QHD', 2399, 1000);
