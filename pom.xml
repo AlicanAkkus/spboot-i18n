@@ -81,5 +81,14 @@
 		</plugins>
 	</build>
 
+	<developers>
+		<developer>
+			<name>aakkus</name>
+			<roles>
+				<role>bla bla</role>
+			</roles>
+			<email>alican.akkus94@gmail.com</email>
+		</developer>
+	</developers>
 
 </project>

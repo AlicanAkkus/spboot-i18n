@@ -16,6 +16,7 @@
             </div>
             <ul class="nav navbar-nav">
                 <li class="active"><a href="#" th:text="#{home.products.text}">Products</a></li>
+                <li><a th:href="@{https://github.com/AlicanAkkus}" th:text="'Author : ' + #{home.project.author}"></a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown">
@@ -36,11 +37,13 @@
             <table class="table table-striped table-bordered">
                 <tr>
                     <th th:text="#{product.name.text}">NAME</th>
+                    <th th:text="#{product.detail.text}">DETAIL</th>
                     <th th:text="#{product.price.text}">PRICE</th>
                     <th th:text="#{product.stockCount.text}">STOCK</th>
                 </tr>
                 <tr th:each="product : ${products}">
                     <td th:text="${product.name}">Onions</td>
+                    <td th:text="${product.details}">Onions Details</td>
                     <td th:text="${currenyFormatter.format(product.price)}">2.41</td>
                     <td th:text="${product.stockCount}">123</td>
                 </tr>
